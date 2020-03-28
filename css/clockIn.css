@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  text-align: center;
+}
+
+.daka-info {
+  width: 26rem;
+  position: absolute;
+  top: 50px;
+}
+
+#container {
+  height: 44%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#distance {
+  margin: 10px;
+  font-size: 12px;
+}
+
+#place {
+  margin: 5px auto;
+  height: 20px;
+  color: #ffffff;
+  width: 80px;
+  font-size: 12px;
+  padding-top: 1px;
+}
+
+.isdiy {
+  background-color: #5fb878;
+}
+
+.nodiy {
+  background-color: #ff5722;
+}
+
+.layui-form-switch {
+  width: -5%;
+  height: 20%;
+  background-color: #ff5722;
+  margin: 5px 0;
+}
+
+.layui-form-onswitch {
+  background-color: #009688;
+}
+
+.layui-form-switch em {
+  color: #ffffff !important;
+}
+
+#box {
+  /*position: fixed;
+          bottom: 0;*/
+  margin-top: 50px;
+  width: 100%;
+}
+
+#history {
+  text-align: left;
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layui-timeline-item {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.layui-text {
+  line-height: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+#weizhi {
+  margin-top: -8px;
+  display: block;
+  color: #009f95;
+  font-size: 11px;
+}
+
+.signtype {
+  color: orange;
+  font-style: normal;
+}
+
+#location {
+  font-size: 12px;
+}
+
+.daka-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(#ffb957, #ffac38);
+  box-shadow: 0px 5px 10px #ffbb5c;
+  margin: auto;
+}
+.daka-btn .text {
+  color: #fff;
+  font-size: 18px;
+}
+.daka-btn #time {
+  font-size: 13px;
+}
+
+.daka-btn.active {
+  background: linear-gradient(#70c4f4, #63a2e4);
+  box-shadow: 0px 5px 10px rgba(99, 162, 228, 0.75);
+}
+
+.hint {
+  margin: 0 auto;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #666;
+}
