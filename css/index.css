@@ -1,0 +1,245 @@
+body {
+  background: #fafafa;
+  font-family: mFont;
+  touch-action: none;
+}
+body #tab1 .container {
+  padding-bottom: 55px;
+  bottom: 0;
+}
+body #tab1 .container .content {
+  margin: 10px 15px;
+  background: #fff;
+  border-radius: 5px;
+}
+body #tab1 .container .content .grids-small .grid {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+body #tab1 .container .content .grids-small .weui-grid__icon {
+  width: 40px;
+  height: 40px;
+}
+body #tab1 .container .content .title {
+  padding: 10px 10px 10px 0;
+  display: flex;
+  align-items: center;
+}
+body #tab1 .container .content .title i {
+  width: 2px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body #tab1 .container .content .title span {
+  font-size: 15px;
+  color: #666;
+  font-family: mFont;
+  padding-left: 10px;
+}
+body #tab1 .container .content .weui-grids .grid .weui-grid__label {
+  color: #4b4b57;
+  font-family: mFont;
+  white-space: normal;
+  text-overflow: clip;
+}
+body #tab1 .container .client .title i {
+  background: #fcb058;
+}
+body #tab1 .container .business .title i {
+  background: #9789b6;
+}
+body #tab1 .container .cost .title i {
+  background: #63a3e4;
+}
+body #tab1 .container .synergy .title i {
+  background: #8ac48d;
+}
+body #tab2 .weui-panel {
+  padding-bottom: 56px;
+  background-color: inherit;
+}
+body #tab2 .weui-panel:after {
+  border-bottom: none;
+}
+body #tab2 .weui-panel .weui-panel__bd {
+  position: relative;
+  background-color: #fff;
+}
+body #tab2 .weui-panel .weui-panel__bd:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #E5E5E5;
+  color: #E5E5E5;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+body #tab2 .weui-panel .weui-panel__bd .weui-media-box {
+  padding: 15px 15px;
+}
+body #tab2 .weui-panel .weui-panel__bd .weui-media-box .weui-media-box__hd {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  min-width: auto;
+}
+body #tab2 .weui-panel .weui-panel__bd .weui-media-box .weui-media-box__hd .weui-badge {
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  min-width: 12px;
+  min-height: 12px;
+  padding: 0;
+}
+body #tab2 .weui-panel .weui-panel__bd .weui-media-box .weui-media-box__bd .weui-media-box__title {
+  font-size: 15px;
+}
+body #tab2 .weui-panel .weui-panel__bd .weui-media-box .weui-media-box__time {
+  float: right;
+  font-size: 11px;
+  line-height: 22px;
+  color: #999;
+}
+body #tab2 .weui-panel .weui-panel__bd .line {
+  width: 100%;
+  height: 1px;
+  background: #ededed;
+  display: flex;
+}
+body #tab3 .weui-cell__hd {
+  min-width: inherit;
+  margin-right: inherit;
+}
+body #tab3 .weui-cell__bd {
+  flex: 1;
+}
+body #tab3 .myHd {
+  width: 100%;
+  height: 110px;
+  background-color: #3c394b;
+}
+body #tab3 .myHd .weui-cells {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  background-color: inherit;
+}
+body #tab3 .myHd .weui-cells:before {
+  border: 0;
+}
+body #tab3 .myHd .weui-cells:after {
+  border: 0;
+}
+body #tab3 .myHd .weui-cells .weui-cell {
+  display: block;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+body #tab3 .myHd .weui-cells .weui-cell .myBox {
+  display: flex;
+  height: 100%;
+}
+body #tab3 .myHd .weui-cells .weui-cell .weui-cell__bd {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+body #tab3 .myHd .weui-cells .weui-cell .weui-cell__bd .img {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #63a2e4;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
+}
+body #tab3 .myHd .weui-cells .weui-cell .weui-cell__bd .info {
+  display: flex;
+  flex-direction: column;
+}
+body #tab3 .myHd .weui-cells .weui-cell .weui-cell__bd .info .name {
+  font-size: 15px;
+}
+body #tab3 .myHd .weui-cells .weui-cell .weui-cell__bd .info .company {
+  font-size: 12px;
+}
+body #tab3 .myHd .weui-cells .weui-cell .weui-cell__ft {
+  flex: initial;
+}
+body #tab3 .myBd .weui-cell {
+  align-items: center;
+}
+body .weui-tabbar {
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #ededed;
+}
+body .weui-tabbar .weui-tabbar__item {
+  padding: 10px 0 0 0;
+}
+body .weui-tabbar .weui-tabbar__item .weui-cell__hd {
+  min-width: auto;
+  margin-right: auto;
+}
+body .weui-tabbar .weui-tabbar__item .weui-badge {
+  position: absolute;
+  top: 0.3em;
+  left: 50%;
+}
+body .weui-tabbar .weui-tabbar__item .weui-tabbar__icon {
+  width: 24px;
+  height: 24px;
+}
+body .weui-tabbar .weui-tabbar__item .weui-tabbar__icon i {
+  color: #C7C7D1;
+  font-size: 24px;
+  line-height: 24px;
+}
+body .weui-tabbar .weui-tabbar__item .weui-tabbar__label {
+  font-size: 10px;
+  color: #333;
+}
+body .weui-tabbar .weui-bar__item--on .weui-tabbar__icon i {
+  color: #fcb058;
+}
+body .weui-tabbar .weui-bar__item--on .weui-tabbar__label {
+  color: #fcb058;
+}
+body .weui-grids:before,
+body .weui-grids:after,
+body .grid:before,
+body .grid:after,
+body .weui-tabbar:before {
+  border: none;
+}
+body .weui-media-box:before {
+  right: 15px;
+  left: 59px;
+}
+body .iconfont {
+  font-size: 40px;
+  line-height: 40px;
+}
+body .purple {
+  color: #9789B6;
+}
+body .yellow {
+  color: #FFAC38;
+}
+body .blue {
+  color: #70C4F4;
+}
+body .green {
+  color: #88BE77;
+}

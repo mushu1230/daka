@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+#order .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#order .content .bd {
+  flex: 1;
+  overflow-y: scroll;
+}
+#order .content .bd .weui-cells {
+  background-color: #fff;
+}
+#order .content .bd .weui-cells:first-of-type:before {
+  border: none;
+}
+#order .content .bd .weui-cells:before {
+  border-color: #ededed;
+}
+#order .content .bd .weui-cells .weui-cell {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+}
+#order .content .bd .weui-cells .weui-cell .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#order .content .bd .weui-cells .weui-cell .item .itemName {
+  font-size: 16px;
+  color: #111;
+  width: 80%;
+}
+#order .content .bd .weui-cells .weui-cell .item .itemState {
+  font-size: 14px;
+}
+#order .content .bd .weui-cells .weui-cell .item .itemState.itemState1 {
+  color: #fcb058;
+}
+#order .content .bd .weui-cells .weui-cell .item .itemState.itemState2 {
+  color: #8ac48d;
+}
+#order .content .bd .weui-cells .weui-cell .item .itemState.itemState3 {
+  color: #f27474;
+}
+#order .content .bd .weui-cells .weui-cell .item .itemState.itemState4 {
+  color: #88be77;
+}
+#order .content .bd .weui-cells .weui-cell .item .orderInfo {
+  display: flex;
+  align-items: center;
+  line-height: 22px;
+  padding-top: 3px;
+}
+#order .content .bd .weui-cells .weui-cell .item .orderInfo .orderTime {
+  font-size: 14px;
+  color: #666;
+}
+#order .content .bd .weui-cells .weui-cell .item.orderer {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+  padding-top: 3px;
+}
+#order .content .bd .add {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fcb058;
+  z-index: 99;
+}

@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .bd {
+  flex: 1;
+  overflow-y: scroll;
+}
+.content .bd .weui-cells {
+  background-color: #fff;
+}
+.content .bd .weui-cells:first-of-type:before {
+  border: none;
+}
+.content .bd .weui-cells:before {
+  border-color: #ededed;
+}
+.content .bd .weui-cells .weui-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 0;
+}
+.content .bd .weui-cells .weui-cell .contractL {
+  flex: auto;
+  width: 80%;
+  font-size: 15px;
+}
+.content .bd .weui-cells .weui-cell .contractL .item .itemName {
+  font-size: 15px;
+  line-height: 15px;
+}
+.content .bd .weui-cells .weui-cell .contractL .item-content {
+  color: #666;
+  font-size: 13px;
+  line-height: 23px;
+  padding: 6px 0;
+}
+.content .bd .weui-cells .weui-cell .contractL .item-content .item-list {
+  flex-direction: column;
+}
+.content .bd .weui-cells .weui-cell .contractR {
+  flex: auto;
+  width: 20%;
+  font-size: 13px;
+  color: #FCB058;
+  text-align: right;
+  padding-bottom: 15px;
+}
+.content .bd .weui-cells .review-btn {
+  width: 100%;
+  border-top: 1px solid #f6f6f6;
+  line-height: 40px;
+  font-size: 14px;
+}
+.content .bd .weui-cells .review-btn .normal {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.content .bd .weui-cells .review-btn .normal .reviewL, .content .bd .weui-cells .review-btn .normal .reviewR {
+  flex: 1;
+  color: #FCB058;
+}
+.content .bd .weui-cells .review-btn .normal i {
+  display: flex;
+  width: 1px;
+  height: 20px;
+  background: #ededed;
+}
+.content .bd .weui-cells .review-btn .succeed {
+  align-items: center;
+  text-align: center;
+  color: #88BE77;
+}
+.content .bd .weui-cells .review-btn .fail {
+  align-items: center;
+  text-align: center;
+  color: #f27474;
+}
+.content .bd .add {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fcb058;
+  z-index: 99;
+}

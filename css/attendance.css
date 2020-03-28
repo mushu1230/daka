@@ -1,0 +1,490 @@
+@charset "UTF-8";
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+  overflow-y: hidden;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+}
+
+.fullBox {
+  z-index: 99999;
+}
+
+.weui-cell {
+  overflow: hidden;
+}
+
+.attendance {
+  /*--------------记录--------------*/
+}
+.attendance .weui-tabbar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.attendance .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+  color: #FCB058;
+}
+.attendance #tab1 .main {
+  margin-bottom: 50px;
+}
+.attendance #tab1 .submit-btn {
+  margin-top: 0;
+}
+.attendance #tab1 .weui-cells {
+  margin: 0 0 15px 0 !important;
+}
+.attendance #tab1 .approval {
+  margin: 0 !important;
+}
+.attendance #tab1 .weui-cells-trip {
+  margin: 0 !important;
+}
+.attendance #tab2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.attendance .record {
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #fafafa;
+  margin-bottom: 50px;
+}
+.attendance .record .weui-cells:before {
+  border: none;
+}
+.attendance .record .weui-cell {
+  display: flex;
+}
+.attendance .record .weui-cell .customer-group {
+  display: flex;
+  justify-content: space-between;
+}
+.attendance .record .weui-cell .customer-group .img {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #63a2e4;
+  color: #FFFFFF;
+  text-align: center;
+}
+.attendance .record .weui-cell .customer-group .time-info {
+  width: 60%;
+  flex: 1;
+}
+.attendance .record .weui-cell .customer-group .time-info .describe {
+  line-height: 16px;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #666;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.attendance .record .weui-cell .customer-group .time-info .describe p {
+  display: inline;
+  line-height: 20px;
+}
+.attendance .record .weui-cell .customer-group .time-info .info-myAtt {
+  font-size: 16px;
+  color: #333;
+}
+.attendance .record .weui-cell .customer-group .detail {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
+}
+.attendance .record .weui-cell .customer-group .detail .date {
+  line-height: 20px;
+  font-size: 12px;
+  color: #999;
+}
+.attendance .record .weui-cell .customer-group .detail .state {
+  margin-bottom: 8px;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.attendance .record .weui-cell .customer-group .detail .state .record-pass {
+  color: #8ac48d;
+}
+.attendance .record .weui-cell .customer-group .detail .state .record-wait {
+  color: #fcb058;
+}
+.attendance .record .weui-cell .customer-group .detail .state .record-refuse {
+  color: #f27474;
+}
+.attendance .record .weui-cell.report-cell {
+  flex-direction: column;
+  align-items: normal;
+}
+.attendance .record .weui-cell.report-cell .report {
+  margin-top: 8px;
+  color: #666;
+}
+.attendance .record .weui-loadmore {
+  margin: 0.5em auto;
+}
+.attendance .record .add {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fcb058;
+  z-index: 99;
+}
+
+.attendance-record {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.attendance-record .bd {
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #fafafa;
+}
+.attendance-record .bd .weui-cells:before {
+  border: none;
+}
+.attendance-record .bd .weui-cell {
+  display: flex;
+}
+.attendance-record .bd .weui-cell .customer-group {
+  display: flex;
+  justify-content: space-between;
+}
+.attendance-record .bd .weui-cell .customer-group .img {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #63a2e4;
+  color: #FFFFFF;
+  text-align: center;
+}
+.attendance-record .bd .weui-cell .customer-group .time-info {
+  width: 60%;
+  flex: 1;
+}
+.attendance-record .bd .weui-cell .customer-group .time-info .describe {
+  line-height: 16px;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #999;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.attendance-record .bd .weui-cell .customer-group .time-info .describe p {
+  display: inline;
+  line-height: 20px;
+  color: #333;
+}
+.attendance-record .bd .weui-cell .customer-group .time-info .info-myAtt {
+  font-size: 16px;
+  color: #333;
+}
+.attendance-record .bd .weui-cell .customer-group .time-info .info-myAtt .date {
+  line-height: 20px;
+  font-size: 12px;
+  color: #999;
+}
+.attendance-record .bd .weui-cell .customer-group .detail {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
+}
+.attendance-record .bd .weui-cell .customer-group .detail .state {
+  margin-bottom: 8px;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.attendance-record .bd .weui-cell .customer-group .detail .state .record-pass {
+  color: #8ac48d;
+}
+.attendance-record .bd .weui-cell .customer-group .detail .state .record-wait {
+  color: #fcb058;
+}
+.attendance-record .bd .weui-cell .customer-group .detail .state .record-refuse {
+  color: #f27474;
+}
+.attendance-record .bd .weui-cell.report-cell {
+  flex-direction: column;
+  align-items: normal;
+}
+.attendance-record .bd .weui-cell.report-cell .report {
+  margin-top: 8px;
+  color: #666;
+}
+.attendance-record .bd .weui-loadmore {
+  margin: 0.5em auto;
+}
+.attendance-record .bd .add {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fcb058;
+  z-index: 99;
+}
+.attendance-record .backout-btn {
+  height: 50px;
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  width: 100%;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ededed;
+  cursor: pointer;
+}
+.attendance-record .backout-btn img {
+  width: 13px;
+  height: 13px;
+}
+.attendance-record .backout-btn span {
+  font-size: 15px;
+  color: #333;
+  margin-left: 5px;
+}
+
+.trip #tab1 .main {
+  margin-bottom: 0 !important;
+}
+.trip #tab1 .main .addList {
+  margin: 0 !important;
+}
+.trip #tab1 .add-btn {
+  margin: 0 0 15px 0;
+}
+.trip #tab1 .submit-btn {
+  margin-bottom: 50px;
+}
+
+.weui-tabbar {
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #ededed;
+}
+.weui-tabbar .weui-tabbar__item {
+  padding: 10px 0 0 0;
+}
+.weui-tabbar .weui-tabbar__item .weui-cell__hd {
+  min-width: auto;
+  margin-right: auto;
+}
+.weui-tabbar .weui-tabbar__item .weui-badge {
+  position: absolute;
+  top: 0.3em;
+  left: 50%;
+}
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon {
+  width: 24px;
+  height: 24px;
+}
+.weui-tabbar .weui-tabbar__item .weui-tabbar__icon i {
+  color: #C7C7D1;
+  font-size: 24px;
+  line-height: 24px;
+}
+.weui-tabbar .weui-tabbar__item .weui-tabbar__label {
+  font-size: 10px;
+  color: #333;
+}
+.weui-tabbar .weui-bar__item--on .weui-tabbar__icon i {
+  color: #fcb058;
+}
+.weui-tabbar .weui-bar__item--on .weui-tabbar__label {
+  color: #fcb058;
+}
+
+.attendance-approve .record {
+  height: 100%;
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #fafafa;
+}
+.attendance-approve .record .weui-cells:before {
+  border: none;
+}
+.attendance-approve .record .weui-cell {
+  display: flex;
+}
+.attendance-approve .record .weui-cell .customer-group {
+  display: flex;
+  justify-content: space-between;
+}
+.attendance-approve .record .weui-cell .customer-group .img {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #63a2e4;
+  color: #FFFFFF;
+  text-align: center;
+}
+.attendance-approve .record .weui-cell .customer-group .time-info {
+  width: 60%;
+  flex: 1;
+}
+.attendance-approve .record .weui-cell .customer-group .time-info .describe {
+  line-height: 16px;
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #666;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.attendance-approve .record .weui-cell .customer-group .time-info .describe p {
+  display: inline;
+  line-height: 20px;
+}
+.attendance-approve .record .weui-cell .customer-group .time-info .info-myAtt {
+  font-size: 16px;
+  color: #333;
+}
+.attendance-approve .record .weui-cell .customer-group .detail {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
+}
+.attendance-approve .record .weui-cell .customer-group .detail .date {
+  line-height: 20px;
+  font-size: 12px;
+  color: #999;
+}
+.attendance-approve .record .weui-cell .customer-group .detail .state {
+  margin-bottom: 8px;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.attendance-approve .record .weui-cell .customer-group .detail .state .record-pass {
+  color: #8ac48d;
+}
+.attendance-approve .record .weui-cell .customer-group .detail .state .record-wait {
+  color: #fcb058;
+}
+.attendance-approve .record .weui-cell .customer-group .detail .state .record-refuse {
+  color: #f27474;
+}
+.attendance-approve .record .weui-cell.report-cell {
+  flex-direction: column;
+  align-items: normal;
+}
+.attendance-approve .record .weui-cell.report-cell .report {
+  margin-top: 8px;
+  color: #666;
+}
+.attendance-approve .record .weui-loadmore {
+  margin: 0.5em auto;
+}
+.attendance-approve .record .add {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fcb058;
+  z-index: 99;
+}
+.attendance-approve .weui-navbar + .weui-tab__bd {
+  padding-top: 100px;
+}
+.attendance-approve .weui-bar__item--on {
+  background: #fafafa;
+}
+.attendance-approve .weui-bar__item--on span {
+  border-bottom: 2px solid #FCB058;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+}
+.attendance-approve .weui-navbar:after {
+  border-bottom: 1px solid #ededed;
+}
+.attendance-approve .weui-search-bar {
+  background: #fafafa;
+  padding: 10px;
+  height: 50px;
+}
+.attendance-approve .weui-search-bar:after {
+  border: none;
+}
+
+.weui-grids:before,
+.weui-grids:after,
+.grid:before,
+.grid:after,
+.weui-tabbar:before {
+  border: none;
+}
+
+.weui-media-box:before {
+  right: 15px;
+  left: 59px;
+}
+
+.iconfont {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.purple {
+  color: #9789B6;
+}
+
+.yellow {
+  color: #FFAC38;
+}
+
+.blue {
+  color: #70C4F4;
+}
+
+.green {
+  color: #88BE77;
+}

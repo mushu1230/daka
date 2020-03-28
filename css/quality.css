@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+  background-color: #fafafa;
+}
+
+#quality .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#quality .content .bd {
+  flex: 1;
+  overflow-y: scroll;
+}
+#quality .content .bd .weui-cells {
+  background-color: #fff;
+}
+#quality .content .bd .weui-cells:first-of-type:before {
+  border: none;
+}
+#quality .content .bd .weui-cells:before {
+  border-color: #ededed;
+}
+#quality .content .bd .weui-cells .weui-cell {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+}
+#quality .content .bd .weui-cells .weui-cell .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#quality .content .bd .weui-cells .weui-cell .item .itemName {
+  font-size: 16px;
+  color: #333;
+}
+#quality .content .bd .weui-cells .weui-cell .item .describe {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+  line-height: 20px;
+}
+#quality .content .bd .weui-cells .weui-cell .item .date {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
+}
+#quality .content .bd .add {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #fcb058;
+  z-index: 99;
+}

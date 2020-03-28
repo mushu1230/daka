@@ -1,0 +1,267 @@
+#orderApproval {
+  position: relative;
+}
+#orderApproval .item-cell {
+  display: block;
+  padding: 15px;
+}
+#orderApproval .item-cell .item-cell-hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+#orderApproval .item-cell .item-cell-hd .title {
+  line-height: 20px;
+  font-size: 16px;
+  color: #333333;
+  width: 80%;
+}
+#orderApproval .item-cell .item-cell-hd .title:before {
+  content: " ";
+  display: block;
+  float: left;
+  width: 2px;
+  height: 12px;
+  background-color: #fcb058;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+#orderApproval .item-cell .item-cell-hd .itemState {
+  font-size: 14px;
+}
+#orderApproval .item-cell .item-cell-hd .itemState.itemState1 {
+  color: #fcb058;
+}
+#orderApproval .item-cell .item-cell-hd .itemState.itemState2 {
+  color: #8ac48d;
+}
+#orderApproval .item-cell .item-cell-hd .itemState.itemState3 {
+  color: #f27474;
+}
+#orderApproval .item-cell .item-cell-hd .itemState.itemState4 {
+  color: #88be77;
+}
+#orderApproval .item-cell .item-cell-bd {
+  font-size: 13px;
+  margin-left: 10px;
+  line-height: 22px;
+  color: #666;
+  display: flex;
+}
+#orderApproval .item-cell .item-cell-bd .label {
+  flex: 1;
+  color: #666;
+  margin-right: 8px;
+}
+#orderApproval .item-cell .item-cell-bd .label .content {
+  color: #999;
+}
+#orderApproval .summary {
+  padding: 15px;
+  font-size: 14px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  height: 15px;
+  line-height: 15px;
+}
+#orderApproval .summary .label {
+  color: #999;
+  flex: auto;
+  font-size: 12px;
+  text-align: center;
+}
+#orderApproval .summary .left {
+  text-align: left;
+}
+#orderApproval .summary .right {
+  text-align: right;
+  margin-right: 20px;
+}
+#orderApproval .weui-cells {
+  margin: 0;
+}
+#orderApproval .weui-cells .weui-cell {
+  padding: 15px;
+  font-size: 14px;
+}
+#orderApproval .weui-cells .weui-cell .product-cell-bd {
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  width: 100%;
+  margin-bottom: 0px;
+}
+#orderApproval .weui-cells .weui-cell .product-cell-bd .label {
+  color: #999;
+  flex: auto;
+  text-align: center;
+}
+#orderApproval .weui-cells .weui-cell .product-cell-bd .right {
+  text-align: right;
+  width: 12%;
+  margin-left: 10px;
+}
+#orderApproval .weui-cells .weui-cell .product-cell-bd .middle {
+  text-align: left;
+  margin-left: 16px;
+  width: 50%;
+}
+#orderApproval .weui-cells .weui-cell .product-cell-bd .title {
+  color: #333;
+  max-width: 100px;
+  text-align: left;
+  width: 36%;
+  max-width: 36%;
+}
+#orderApproval .weui-cells .weui-cell .product-cell-bd i {
+  flex: auto;
+  width: 14px;
+  height: 14px;
+  margin-top: 2px;
+  margin-left: 10px;
+  background: url(../img/icon-right.png) no-repeat;
+}
+#orderApproval .weui-cells .link {
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-top: 1px solid #f6f6f6;
+}
+#orderApproval .weui-cells .submenu {
+  display: none;
+  background: #fff;
+  font-size: 14px;
+  border-top: solid 1px #f6f6f6;
+}
+#orderApproval .weui-cells .submenu li:first-child {
+  padding-top: 15px;
+}
+#orderApproval .weui-cells .submenu li:last-child {
+  padding-bottom: 18px;
+}
+#orderApproval .weui-cells .submenu li {
+  display: flex;
+  text-decoration: none;
+  color: #999;
+  padding: 0px 15px 7px 35px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#orderApproval .weui-cells .submenu li p {
+  flex: auto;
+  width: 20%;
+}
+#orderApproval .weui-cells .submenu li span {
+  flex: auto;
+  width: 80%;
+  color: #666;
+  padding-left: 13px;
+}
+#orderApproval .accordion li i {
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#orderApproval .accordion li.open i.down {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#orderApproval .total {
+  padding: 15px;
+  font-size: 14px;
+  color: #F0AD4E;
+  background: #FFFFFF;
+  border: 1px solid #f6f6f6;
+  text-align: center;
+  margin-bottom: 80px;
+}
+#orderApproval .total .total-cell {
+  width: 100%;
+  margin: 0 auto;
+}
+#orderApproval .submit-btn {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 500;
+  width: 100%;
+  background: rgba(250, 250, 250, 0.8);
+}
+#orderApproval .submit-btn .lbtn {
+  padding: 20px 10px 20px 28px;
+  flex: 1;
+}
+#orderApproval .submit-btn .lbtn .weui-btn_submit {
+  background-color: #c7c7d1;
+  border-radius: 50px;
+  font-size: 13px;
+  line-height: 40px;
+}
+#orderApproval .submit-btn .rbtn {
+  padding: 20px 28px 20px 10px;
+  flex: 1;
+}
+#orderApproval .submit-btn .rbtn .weui-btn_submit {
+  background-color: #fcb058;
+  border-radius: 50px;
+  font-size: 13px;
+  line-height: 40px;
+}
+#orderApproval .submit-btn .btn {
+  padding: 20px;
+  width: 100%;
+}
+#orderApproval .submit-btn .btn .weui-btn_submit {
+  background-color: #fcb058;
+  border-radius: 50px;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.weui_check {
+  border-radius: 50px;
+}
+
+.orderArrival .weui-cells_checkbox {
+  position: absolute;
+  z-index: 100;
+}
+.orderArrival .weui-cells_checkbox .weui-check:checked + .weui-icon-checked:before {
+  color: #fcb058;
+  border-radius: 50px;
+  font-size: 14px;
+}
+.orderArrival .weui-cells_checkbox .weui-icon-checked:before {
+  border-radius: 50px;
+  font-size: 14px;
+}
+.orderArrival .weui-cells_checkbox .weui-check__label {
+  padding-right: 0px !important;
+  padding-left: 6px !important;
+}
+.orderArrival .weui-cells_checkbox .weui-check__label .weui-icon-checked {
+  padding-bottom: 0;
+}
+.orderArrival .weui-cells_checkbox .disabled:before {
+  color: #999 !important;
+}
+.orderArrival .summary {
+  padding-left: 30px !important;
+}
+.orderArrival .link {
+  padding-left: 30px !important;
+  border: 0 !important;
+}
+
+.weui-cells:after {
+  border: 0;
+}
